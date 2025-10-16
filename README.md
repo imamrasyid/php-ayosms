@@ -63,8 +63,6 @@ If you’re managing dependencies manually:
 composer require imamrasyid/php-ayosms
 ```
 
-_(You can create your own package from this repo if you wish to publish it on Packagist.)_
-
 ---
 
 ## 🧰 Configuration
