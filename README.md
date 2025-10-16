@@ -1,4 +1,4 @@
-# Ayosms PHP SDK v1.3
+# Ayosms PHP SDK v1.0
 
 [![PHP Version](https://img.shields.io/badge/PHP-%3E%3D7.4-blue.svg)](https://www.php.net/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
