@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="12" assertions="22" errors="0" warnings="0" failures="0" skipped="0" time="0.014295">
+    <testsuite name="Ayosms SDK Test Suite" tests="12" assertions="22" errors="0" warnings="0" failures="0" skipped="0" time="0.014295">
+      <testsuite name="Tests\AyosmsTest" file="D:\Project\PHP\php-ayosms\tests\AyosmsTest.php" tests="12" assertions="22" errors="0" warnings="0" failures="0" skipped="0" time="0.014295">
+        <testcase name="testSendSMS_ReturnsSuccess_WhenValidRequest" class="Tests\AyosmsTest" classname="Tests.AyosmsTest" file="D:\Project\PHP\php-ayosms\tests\AyosmsTest.php" line="38" assertions="3" time="0.012865"/>
+        <testcase name="testSendSMS_ReturnsError_WhenApiKeyMissing" class="Tests\AyosmsTest" classname="Tests.AyosmsTest" file="D:\Project\PHP\php-ayosms\tests\AyosmsTest.php" line="54" assertions="2" time="0.000302"/>
+        <testcase name="testSendSMS_ReturnsError_WhenNonGSMCharacters" class="Tests\AyosmsTest" classname="Tests.AyosmsTest" file="D:\Project\PHP\php-ayosms\tests\AyosmsTest.php" line="62" assertions="2" time="0.000054"/>
+        <testcase name="testSendSMS_CalculatesSegments_ForLongMessage" class="Tests\AyosmsTest" classname="Tests.AyosmsTest" file="D:\Project\PHP\php-ayosms\tests\AyosmsTest.php" line="69" assertions="1" time="0.000116"/>
+        <testcase name="testCheckBalance_ReturnsSuccess" class="Tests\AyosmsTest" classname="Tests.AyosmsTest" file="D:\Project\PHP\php-ayosms\tests\AyosmsTest.php" line="81" assertions="2" time="0.000083"/>
+        <testcase name="testCheckBalance_ReturnsError_WhenNoApiKey" class="Tests\AyosmsTest" classname="Tests.AyosmsTest" file="D:\Project\PHP\php-ayosms\tests\AyosmsTest.php" line="93" assertions="2" time="0.000044"/>
+        <testcase name="testSendHLR_ReturnsSuccess" class="Tests\AyosmsTest" classname="Tests.AyosmsTest" file="D:\Project\PHP\php-ayosms\tests\AyosmsTest.php" line="105" assertions="2" time="0.000082"/>
+        <testcase name="testOtpRequest_ReturnsError_WhenSecretMissing" class="Tests\AyosmsTest" classname="Tests.AyosmsTest" file="D:\Project\PHP\php-ayosms\tests\AyosmsTest.php" line="120" assertions="2" time="0.000044"/>
+        <testcase name="testOtpCheck_ReturnsError_WhenPinMissing" class="Tests\AyosmsTest" classname="Tests.AyosmsTest" file="D:\Project\PHP\php-ayosms\tests\AyosmsTest.php" line="130" assertions="2" time="0.000046"/>
+        <testcase name="testValidateDlrPayload_ReturnsValid_WhenAllFieldsPresent" class="Tests\AyosmsTest" classname="Tests.AyosmsTest" file="D:\Project\PHP\php-ayosms\tests\AyosmsTest.php" line="144" assertions="1" time="0.000196"/>
+        <testcase name="testValidateDlrPayload_ReturnsInvalid_WhenMissingFields" class="Tests\AyosmsTest" classname="Tests.AyosmsTest" file="D:\Project\PHP\php-ayosms\tests\AyosmsTest.php" line="154" assertions="2" time="0.000420"/>
+        <testcase name="testIsGSM7Bit_AllowsSpace" class="Tests\AyosmsTest" classname="Tests.AyosmsTest" file="D:\Project\PHP\php-ayosms\tests\AyosmsTest.php" line="161" assertions="1" time="0.000042"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

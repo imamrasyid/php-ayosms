@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Test Documentation</title>
+        <style>
+            body {
+                text-rendering: optimizeLegibility;
+                font-family: Source SansSerif Pro, Arial, sans-serif;
+                font-variant-ligatures: common-ligatures;
+                font-kerning: normal;
+                margin-left: 2rem;
+                background-color: #fff;
+                color: #000;
+            }
+
+            body > ul > li {
+                font-size: larger;
+            }
+
+            h2 {
+                font-size: larger;
+                text-decoration-line: underline;
+                text-decoration-thickness: 2px;
+                margin: 0;
+                padding: 0.5rem 0;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0 0 2rem;
+                padding: 0 0 0 1rem;
+                text-indent: -1rem;
+            }
+
+            .success:before {
+                color: #4e9a06;
+                content: '✓';
+                padding-right: 0.5rem;
+            }
+
+            .defect {
+                color: #a40000;
+            }
+
+            .defect:before {
+                color: #a40000;
+                content: '✗';
+                padding-right: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Ayosms (Tests\Ayosms)</h2>
+        <ul>
+            <li class="success">SendSMS ReturnsSuccess WhenValidRequest</li>
+            <li class="success">SendSMS ReturnsError WhenApiKeyMissing</li>
+            <li class="success">SendSMS ReturnsError WhenNonGSMCharacters</li>
+            <li class="success">SendSMS CalculatesSegments ForLongMessage</li>
+            <li class="success">CheckBalance ReturnsSuccess</li>
+            <li class="success">CheckBalance ReturnsError WhenNoApiKey</li>
+            <li class="success">SendHLR ReturnsSuccess</li>
+            <li class="success">OtpRequest ReturnsError WhenSecretMissing</li>
+            <li class="success">OtpCheck ReturnsError WhenPinMissing</li>
+            <li class="success">ValidateDlrPayload ReturnsValid WhenAllFieldsPresent</li>
+            <li class="success">ValidateDlrPayload ReturnsInvalid WhenMissingFields</li>
+            <li class="success">IsGSM7Bit AllowsSpace</li>
+        </ul>
+    </body>
+</html>

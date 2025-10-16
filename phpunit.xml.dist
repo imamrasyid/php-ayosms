@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         colors="true"
+         verbose="true"
+         cacheResult="false"
+         stopOnFailure="false"
+         convertErrorsToExceptions="true"
+         convertWarningsToExceptions="true"
+         convertNoticesToExceptions="true">
+
+    <testsuites>
+        <testsuite name="Ayosms SDK Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <logging>
+        <junit outputFile="build/logs/junit.xml"/>
+        <testdoxHtml outputFile="build/logs/testdox.html"/>
+    </logging>
+
+    <php>
+        <env name="AYOSMS_API_KEY" value="DUMMY_API_KEY"/>
+    </php>
+</phpunit>

@@ -1,0 +1,56 @@
+{
+  "name": "imamrasyid/php-ayosms",
+  "description": "Unofficial PHP SDK for AYOSMS! Gateway – a lightweight, modern, and developer-friendly wrapper for AYOSMS HTTP APIs (SMS, Balance, HLR, OTP verification). This project is independent and NOT affiliated with, endorsed by, or sponsored by AYOSMS or PT Ayomobile Media International.",
+  "keywords": [
+    "ayosms",
+    "sms",
+    "sms gateway",
+    "otp",
+    "hlr",
+    "balance",
+    "php sdk",
+    "composer package",
+    "api wrapper",
+    "indonesia"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/dev_eyetracker/php-ayosms",
+  "support": {
+    "issues": "https://github.com/dev_eyetracker/php-ayosms/issues",
+    "source": "https://github.com/dev_eyetracker/php-ayosms"
+  },
+  "authors": [
+    {
+      "name": "Imam Rasyid",
+      "email": "imamrasyidw@gmail.com",
+      "homepage": "https://github.com/dev_eyetracker",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ImamRasyid\\Ayosms\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ImamRasyid\\Ayosms\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0-dev"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6"
+  }
+}
