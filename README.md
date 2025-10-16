@@ -3,7 +3,7 @@
 [![PHP Version](https://img.shields.io/badge/PHP-%3E%3D7.4-blue.svg)](https://www.php.net/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Build](https://img.shields.io/badge/build-passing-success.svg)](#)
-[![Packagist](https://img.shields.io/badge/Packagist-imamrasyid%2Fayosms--sdk--php-orange.svg)](#)
+[![Packagist](https://img.shields.io/badge/Packagist-imamrasyid%2Fphp--ayosms-orange.svg)](#)
 [![CodeIgniter Compatible](https://img.shields.io/badge/CodeIgniter-3%2F4-red.svg)](#)
 
 A modern, production-ready **PHP SDK** for [AYOSMS! Global SMS Gateway](https://ayosms.com/api/), fully aligned with their official API documentation.
