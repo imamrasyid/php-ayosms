@@ -223,3 +223,24 @@ class Sms extends CI_Controller {
 MIT License © 2025 — Created by [Imam Rasyid](https://github.com/imamrasyid)
 
 > “Simple, elegant, and reliable — just like your SMS delivery.” 📡
+
+## 📜 Changelog
+
+### 🆕 v1.1 — Word-Safe SMS Splitting & Encoding Fix
+
+**Released V1.1**
+
+- 🧩 **Fixed:** Message encoding no longer uses `rawurlencode($msg)` (prevented double-encoding issues on special characters).
+- 💬 **Improved:** Added intelligent word-safe segmentation (`softSplitMessage()`) ensuring long messages split naturally at spaces, never mid-word.
+- 🧮 **Refined:** Segment calculation (`calcSegments()`) now respects human-readable boundaries.
+- ⚡ **Optimized:** Internal code structure cleaned up for clarity and maintainability.
+- ✅ **Compatibility:** 100 % backward-compatible with v1.0 API behavior.
+
+### 🧰 v1.0 — Initial Release
+
+**Stable release – V1.0**
+
+- Full AYOSMS API coverage (SMS, OTP, HLR, Balance)
+- Comprehensive error mapping
+- CodeIgniter & Composer support
+- PHPUnit test suite with 95 % coverage

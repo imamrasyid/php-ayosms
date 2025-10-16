@@ -111,7 +111,7 @@ class Ayosms
                 'api_key'       => $this->apiKey,
                 'from'          => rawurlencode(substr($from, 0, 11)), // docs show URL-encoded sender
                 'to'            => implode(',', $toList),
-                'msg'           => rawurlencode($msg),
+                'msg'           => $msg,
                 'trx_id'        => $trx_id,
                 'dlr'           => $dlr,
             ];
@@ -376,15 +376,52 @@ class Ayosms
     }
 
     /**
-     * Calculate GSM 7-bit SMS segments (160 / 153 rule).
+     * Calculate GSM 7-bit SMS segments (160 / 153 rule),
+     * but ensure words are not split mid-way.
      *
-     * @param string $msg Message body
+     * @param string $msg
      * @return int Number of segments
      */
     private function calcSegments($msg)
     {
-        $len = strlen($msg);
-        return ($len <= 160) ? 1 : (int)ceil(($len - 160) / 153) + 1;
+        $segments = $this->softSplitMessage($msg);
+        return count($segments);
+    }
+
+    /**
+     * Split message into segments by GSM-7 rule (160/153)
+     * but keep words intact (split at nearest space).
+     *
+     * @param string $msg
+     * @return string[] Array of segments
+     */
+    private function softSplitMessage(string $msg): array
+    {
+        $limit = 160;
+        $concatLimit = 153;
+        $segments = [];
+
+        $msg = trim(preg_replace('/\s+/', ' ', $msg)); // normalize spacing
+
+        // pilih limit sesuai panjang
+        $segLimit = strlen($msg) <= 160 ? $limit : $concatLimit;
+
+        while (strlen($msg) > $segLimit) {
+            // cari spasi terdekat sebelum batas
+            $breakPos = strrpos(substr($msg, 0, $segLimit + 1), ' ');
+            if ($breakPos === false || $breakPos < $segLimit * 0.7) {
+                // kalau tidak ada spasi masuk akal, paksa potong
+                $breakPos = $segLimit;
+            }
+            $segments[] = trim(substr($msg, 0, $breakPos));
+            $msg = ltrim(substr($msg, $breakPos));
+        }
+
+        if (strlen($msg) > 0) {
+            $segments[] = trim($msg);
+        }
+
+        return $segments;
     }
 
     /**
