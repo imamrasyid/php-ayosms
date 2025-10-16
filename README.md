@@ -1,4 +1,4 @@
-# Ayosms PHP SDK v1.3
+# Ayosms PHP SDK v1.0
 
 [![PHP Version](https://img.shields.io/badge/PHP-%3E%3D7.4-blue.svg)](https://www.php.net/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
@@ -222,6 +222,6 @@ class Sms extends CI_Controller {
 
 ## 🧭 License
 
-MIT License © 2025 — Created by [Imam Rasyid](https://github.com/dev_eyetracker)
+MIT License © 2025 — Created by [Imam Rasyid](https://github.com/imamrasyid)
 
 > “Simple, elegant, and reliable — just like your SMS delivery.” 📡

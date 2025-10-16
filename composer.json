@@ -15,16 +15,16 @@
   ],
   "type": "library",
   "license": "MIT",
-  "homepage": "https://github.com/dev_eyetracker/php-ayosms",
+  "homepage": "https://github.com/imamrasyid/php-ayosms",
   "support": {
-    "issues": "https://github.com/dev_eyetracker/php-ayosms/issues",
-    "source": "https://github.com/dev_eyetracker/php-ayosms"
+    "issues": "https://github.com/imamrasyid/php-ayosms/issues",
+    "source": "https://github.com/imamrasyid/php-ayosms"
   },
   "authors": [
     {
       "name": "Imam Rasyid",
       "email": "imamrasyidw@gmail.com",
-      "homepage": "https://github.com/dev_eyetracker",
+      "homepage": "https://github.com/imamrasyid",
       "role": "Developer"
     }
   ],
